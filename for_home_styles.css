@@ -54,7 +54,7 @@ body {
 .section-home{
   align-items:left;
   justify-content: left;
-  padding: 120px 10% 60px;
+  padding: 200px 10% 60px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -297,6 +297,13 @@ h2,h3{
     margin-left: 0;
     padding: 0 5%;
   }
+   .section-home {
+    padding: 220px 5% 60px; /* Increase padding to avoid nav overlap */
+  }
+
+  .section {
+    padding: 170px 5% 60px;
+  }
 }
 
 .card-for-contact {
@@ -377,4 +384,11 @@ h1, h2, h3 {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* already present, this is good */
 }
