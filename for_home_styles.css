@@ -265,17 +265,40 @@ h2,h3{
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar ul li {
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
   }
 
   .home-section {
-    flex-direction: column;
-    padding-top: 150px;
+    padding-top: 180px;
   }
 
-  .image-background {
-    display: none;
+  .home-content {
+    transform: none;
+    margin-left: 0;
+    padding: 0 5%;
   }
 }
+
 .card-for-contact {
   background: rgba(255, 255, 255, 0.05);
   padding: 70px 40px;
@@ -338,13 +361,6 @@ h2,h3{
   background-color: #6be537;
   transform: scale(1.05);
 }
-
-
-
-
-
-
-
 
 
 body {
